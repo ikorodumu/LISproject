@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background: #f4ede4; 
+    color: #4a3f35; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container*/
+.container {
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: #6c584c; 
+    color: white;
+    padding: 18px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 12px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #e6ccb2; 
+}
+
+/* Hero Section*/
+.hero {
+    background: linear-gradient(45deg, rgba(0,0,0,0.2), rgba(0,0,0,0.3));
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 5px solid #b08968; 
+}
+
+/* Sections */
+.section {
+    background: white;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out;
+    line-height: 1.75; 
+    text-align: justify; 
+}
+
+.section:hover {
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Profile Section - More Aesthetic */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: #e6ccb2; 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    color: #3e3228;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #6c584c;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile .bio {
+    max-width: 500px;
+    text-align: left;
+}
+
+
+.section:nth-child(even) {
+    background: #f2e9dc; 
+    color: #4a3f35;
+}
+
+/* Footer */
+footer {
+    background: #3e3228;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: auto;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile .bio {
+        max-width: 90%;
+    }
+}
+
+
+
